@@ -31,3 +31,7 @@ We have extensive data with over 1 million WiFi(`assets/hotpots.csv`) points aft
   - Clean Architecture
   - Single activity architecture
   - MVI(presentation layer)
+
+## Video
+
+https://user-images.githubusercontent.com/7988862/192509969-8aa31909-0b1f-44a7-b789-86df230e70e6.mp4
