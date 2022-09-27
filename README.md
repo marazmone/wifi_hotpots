@@ -15,7 +15,7 @@ You can select one of five categories: `home, gym, coffee, mall, or office`.
 
 We have extensive data with over 1 million WiFi(`assets/hotpots.csv`) points after the application starts, the background process with push notification will start to load all data to DB. If the process ends push notification will be closed. That means all data was transferred to DB and we can enjoy application with the actual data.
 
-![Image2](/images/image1.jpg "Image2")
+![Image2](/images/image2.jpg "Image2")
 
 ## Tech-Stack
 - Tech-stack
