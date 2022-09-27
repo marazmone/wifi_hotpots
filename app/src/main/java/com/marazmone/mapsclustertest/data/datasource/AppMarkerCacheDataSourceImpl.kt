@@ -15,12 +15,12 @@ class AppMarkerCacheDataSourceImpl(
 
     override suspend fun save(entities: List<AppMarkerEntity>) = dao.save(entities)
 
-    override suspend fun getAll(
+    override suspend fun getByFilter(
         southwestLat: Double,
         southwestLng: Double,
         northeastLat: Double,
         northeastLng: Double,
-    ): List<AppMarkerEntity> = dao.getAll(
+    ): List<AppMarkerEntity> = dao.getByFilter(
         southwestLat,
         southwestLng,
         northeastLat,

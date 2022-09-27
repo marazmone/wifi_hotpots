@@ -2,8 +2,8 @@ package com.marazmone.mapsclustertest.presentation.usecase
 
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
-import com.marazmone.mapsclustertest.presentation.manager.DownloadHotPotsWorker
 import com.marazmone.mapsclustertest.domain.repository.AppMarkerRepository
+import com.marazmone.mapsclustertest.presentation.manager.worker.DownloadHotPotsWorker
 
 private const val TAG = "StartDownloadHotpotsUseCase"
 

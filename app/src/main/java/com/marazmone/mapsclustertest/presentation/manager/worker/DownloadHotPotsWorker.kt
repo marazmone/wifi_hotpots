@@ -1,4 +1,4 @@
-package com.marazmone.mapsclustertest.presentation.manager
+package com.marazmone.mapsclustertest.presentation.manager.worker
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -10,6 +10,7 @@ import androidx.work.CoroutineWorker
 import androidx.work.ForegroundInfo
 import androidx.work.WorkerParameters
 import com.marazmone.mapsclustertest.R.drawable
+import com.marazmone.mapsclustertest.presentation.manager.notification.PendingIntentConstructor
 import com.marazmone.mapsclustertest.presentation.usecase.LoadHotpotsFromAssetToDBUseCase
 
 class DownloadHotPotsWorker(
@@ -18,9 +19,8 @@ class DownloadHotPotsWorker(
     private val loadHotpotsFromAssetToDBUseCase: LoadHotpotsFromAssetToDBUseCase,
 ) : CoroutineWorker(appContext, params) {
 
-    private val notificationManager =
-        appContext.getSystemService(Context.NOTIFICATION_SERVICE) as
-                NotificationManager
+    private val notificationManager = appContext
+        .getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
     override suspend fun doWork(): Result {
         setForeground(createForegroundInfo())
@@ -39,6 +39,7 @@ class DownloadHotPotsWorker(
             .setContentTitle(title)
             .setTicker(title)
             .setContentText("Downloading...")
+            .setContentIntent(PendingIntentConstructor.buildPendingIntent(applicationContext))
             .setSmallIcon(drawable.ic_notification_wifi)
             .setOngoing(true)
             .build()

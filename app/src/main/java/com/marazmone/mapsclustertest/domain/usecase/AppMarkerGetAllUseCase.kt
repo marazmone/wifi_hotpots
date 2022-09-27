@@ -12,7 +12,7 @@ class AppMarkerGetAllUseCase(
         southwestLng: Double,
         northeastLat: Double,
         northeastLng: Double,
-    ): List<AppMarker> = repository.getAll(
+    ): List<AppMarker> = repository.getByFilter(
         southwestLat,
         southwestLng,
         northeastLat,

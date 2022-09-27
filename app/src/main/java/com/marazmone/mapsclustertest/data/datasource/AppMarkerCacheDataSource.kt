@@ -8,7 +8,7 @@ interface AppMarkerCacheDataSource {
 
     suspend fun save(entities: List<AppMarkerEntity>)
 
-    suspend fun getAll(
+    suspend fun getByFilter(
         southwestLat: Double,
         southwestLng: Double,
         northeastLat: Double,

@@ -9,7 +9,7 @@ interface AppMarkerRepository {
 
     suspend fun save(markers: List<AppMarkerEntity>)
 
-    suspend fun getAll(
+    suspend fun getByFilter(
         southwestLat: Double,
         southwestLng: Double,
         northeastLat: Double,

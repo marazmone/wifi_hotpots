@@ -1,7 +1,6 @@
 package com.marazmone.mapsclustertest.data.repository
 
 import com.marazmone.mapsclustertest.data.datasource.AppMarkerCacheDataSource
-import com.marazmone.mapsclustertest.data.datasource.AppMarkerCacheDataSourceImpl
 import com.marazmone.mapsclustertest.data.db.entities.AppMarkerEntity
 import com.marazmone.mapsclustertest.domain.mapper.Mapper
 import com.marazmone.mapsclustertest.domain.model.AppMarker
@@ -16,13 +15,13 @@ class AppMarkerRepositoryImpl(
 
     override suspend fun save(markers: List<AppMarkerEntity>) = cache.save(markers)
 
-    override suspend fun getAll(
+    override suspend fun getByFilter(
         southwestLat: Double,
         southwestLng: Double,
         northeastLat: Double,
         northeastLng: Double,
     ): List<AppMarker> = mapper.listAsync(
-        cache.getAll(
+        cache.getByFilter(
             southwestLat,
             southwestLng,
             northeastLat,

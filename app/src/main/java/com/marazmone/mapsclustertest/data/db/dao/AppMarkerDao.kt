@@ -6,7 +6,7 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.marazmone.mapsclustertest.data.db.entities.AppMarkerEntity
 
-private const val QUERY = """
+private const val QUERY_GET_BY_FILTER = """
     SELECT * FROM table_app_marker 
     WHERE lat BETWEEN :southwestLat AND :northeastLat 
     AND lng BETWEEN :southwestLng AND :northeastLng
@@ -21,8 +21,8 @@ interface AppMarkerDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun save(entities: List<AppMarkerEntity>)
 
-    @Query(QUERY)
-    suspend fun getAll(
+    @Query(QUERY_GET_BY_FILTER)
+    suspend fun getByFilter(
         southwestLat: Double,
         southwestLng: Double,
         northeastLat: Double,
