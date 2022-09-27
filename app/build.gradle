@@ -64,9 +64,10 @@ dependencies {
     implementation 'com.google.maps.android:android-maps-utils:2.4.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation platform('com.google.firebase:firebase-bom:30.4.1')
-    implementation "io.insert-koin:koin-core:3.2.1"
-    implementation "io.insert-koin:koin-android:3.2.1"
-    implementation "io.insert-koin:koin-androidx-compose:3.2.1"
+    implementation "io.insert-koin:koin-core:3.2.0"
+    implementation "io.insert-koin:koin-android:3.2.0"
+    implementation "io.insert-koin:koin-androidx-compose:3.2.0"
+    implementation "io.insert-koin:koin-androidx-workmanager:3.2.0"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
     implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1"
     implementation "androidx.lifecycle:lifecycle-common-java8:2.5.1"

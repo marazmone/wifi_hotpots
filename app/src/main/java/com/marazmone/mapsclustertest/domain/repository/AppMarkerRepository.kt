@@ -15,4 +15,8 @@ interface AppMarkerRepository {
         northeastLat: Double,
         northeastLng: Double,
     ): List<AppMarker>
+
+    suspend fun setDownloadWorkerStarted(value: Boolean)
+
+    suspend fun getDownloadWorkerStarted(): Boolean
 }

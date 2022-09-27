@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MapsClusterTest</string>
+    <string name="app_name">Hotpots</string>
     <string name="zoom_in_for_result">ZOOM IN for result</string>
     <string name="result_100_plus">100+</string>
     <string name="hotpots_found">%s hotpots found</string>

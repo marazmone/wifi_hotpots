@@ -9,17 +9,17 @@ import com.marazmone.mapsclustertest.presentation.screen.googlemap.GoogleMapCont
 import com.marazmone.mapsclustertest.presentation.screen.googlemap.GoogleMapContract.Action.Result
 import com.marazmone.mapsclustertest.presentation.screen.googlemap.GoogleMapContract.Effect
 import com.marazmone.mapsclustertest.presentation.screen.googlemap.GoogleMapContract.State
-import com.marazmone.mapsclustertest.presentation.usecase.LoadHotpotsFromAssetToDBUseCase
+import com.marazmone.mapsclustertest.presentation.usecase.StartDownloadHotpotsUseCase
 import kotlinx.coroutines.launch
 
 class GoogleMapViewModel(
     private val getAllUseCase: AppMarkerGetAllUseCase,
-    private val loadHotpotsFromAssetToDBUseCase: LoadHotpotsFromAssetToDBUseCase,
+    private val startDownloadHotpotsUseCase: StartDownloadHotpotsUseCase,
 ) : BaseViewModel<State, Action, Effect>() {
 
     init {
         viewModelScope.launch {
-            loadHotpotsFromAssetToDBUseCase.execute()
+            startDownloadHotpotsUseCase.execute()
         }
     }
 

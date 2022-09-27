@@ -40,6 +40,7 @@ class LoadHotpotsFromAssetToDBUseCase(
                         lng = lng,
                         type = randomTypeMarker(order)
                     )
+                    Log.d("wtf", "appMarker $appMarker")
                     saveUseCase.execute(appMarker)
                 } catch (e: Exception) {
                     e.printStackTrace()

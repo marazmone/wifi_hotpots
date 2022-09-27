@@ -29,4 +29,10 @@ class AppMarkerRepositoryImpl(
             northeastLng
         )
     )
+
+    override suspend fun setDownloadWorkerStarted(value: Boolean) {
+        cache.setDownloadWorkerStarted(value)
+    }
+
+    override suspend fun getDownloadWorkerStarted(): Boolean = cache.getDownloadWorkerStarted()
 }

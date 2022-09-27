@@ -14,4 +14,8 @@ interface AppMarkerCacheDataSource {
         northeastLat: Double,
         northeastLng: Double,
     ): List<AppMarkerEntity>
+
+    suspend fun setDownloadWorkerStarted(value: Boolean)
+
+    suspend fun getDownloadWorkerStarted(): Boolean
 }
