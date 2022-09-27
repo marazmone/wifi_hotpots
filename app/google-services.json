@@ -1,0 +1,91 @@
+{
+  "project_info": {
+    "project_number": "79644474453",
+    "firebase_url": "https://projectfortest-8e584.firebaseio.com",
+    "project_id": "projectfortest-8e584",
+    "storage_bucket": "projectfortest-8e584.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79644474453:android:a6f48fda2ec792d06b28dc",
+        "android_client_info": {
+          "package_name": "com.marazmone.mapsclustertest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79644474453-oqq0vnadv5dsj20hph24kbm7570n27cj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.marazmone.mapsclustertest",
+            "certificate_hash": "f9d7c9baa237061e057124db85427095e75022b8"
+          }
+        },
+        {
+          "client_id": "79644474453-8nttndg84i4h4k0es9n4t4mcktaoq6im.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWa2T6hrvqSWVNHfcZHSeGQImc7-V88H8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79644474453-8nttndg84i4h4k0es9n4t4mcktaoq6im.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "79644474453-f8ln7rfle79e306nr17tk7p95ap5qqu9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.marazmone.testfirebase"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79644474453:android:c33316471a3a6aaf6b28dc",
+        "android_client_info": {
+          "package_name": "com.smarteaty.testfastline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79644474453-8nttndg84i4h4k0es9n4t4mcktaoq6im.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWa2T6hrvqSWVNHfcZHSeGQImc7-V88H8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79644474453-8nttndg84i4h4k0es9n4t4mcktaoq6im.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "79644474453-f8ln7rfle79e306nr17tk7p95ap5qqu9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.marazmone.testfirebase"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
